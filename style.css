@@ -1,0 +1,281 @@
+
+/* 1. Whole website design */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f1;
+    color: #263b2b;
+}
+
+/* 2. Header and navigation menu */
+header {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+header h2 {
+    color: #176b45;
+    margin-top: 5px;
+}
+
+nav a {
+    display: inline-block;
+    color: #176b45;
+    text-decoration: none;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #dcefdc;
+}
+
+/* 3. Home page hero section */
+.hero {
+    background-color: #dcefdc;
+    text-align: center;
+    padding: 200px 20px;
+    background-image: url('image2.jpg');
+    background-size: cover;
+}
+.hero h1 {
+    font-size: 38px;
+    color: white;
+}
+.hero h2 {
+    color: white;
+}
+
+.hero p {
+    font-size: 17px;
+    color: white;
+}
+
+
+/* 4. Buttons */
+.button {
+    display: inline-block;
+    background-color: #176b45;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #104c32;
+}
+
+/* 5. Main content */
+
+
+/* 7. Footer */
+footer {
+    background-color: #176b45;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 35px;
+}
+.offer-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Individual Cards */
+.offer-card {
+     background: #ffffff;
+    
+    padding: 50px;
+    border-radius: 15px;
+    border: 1px solid #e2eae1;
+    box-shadow: 0 5px 18px rgba(30, 70, 40, 0.08);
+    box-sizing: border-box;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(30, 70, 40, 0.14);
+
+}
+.offer-card a{
+    display: inline-block;
+    color: #176b45;
+    text-decoration: none;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+
+/* Sorting Guide Layout */
+
+.sorting-page {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 40px 24px 55px;
+}
+
+.sorting-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.sorting-heading h1 {
+    color: #174d35;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.fruit i { color: #21834b; }
+.paper i { color: #2875c7; }
+.phone i { color: #8050bd; }
+.battery i { color: #c17b17; }
+
+h3 i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+.sorting-heading p {
+    color: #58685e;
+    line-height: 1.6;
+}
+
+.sorting-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.sorting-card {
+    background: #ffffff;
+    
+    padding: 50px;
+    border-radius: 15px;
+    border: 1px solid #e2eae1;
+    box-shadow: 0 5px 18px rgba(30, 70, 40, 0.08);
+    box-sizing: border-box;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.sorting-card1, .sorting-card2, .sorting-card3, .sorting-card4, .sorting-card5, .sorting-card6 {
+  
+    box-shadow: 0 5px 18px rgba(30, 70, 40, 0.08);
+    box-sizing: border-box;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+                 
+    height: 300px;
+    width: 300px;
+    background-color: #176b45;
+    padding: 70px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #e0e9df;
+    box-shadow: 0 3px 8px #00000010;
+}
+
+
+.sorting-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(30, 70, 40, 0.14);
+}
+
+.sorting-card h2 {
+    color: #176b46;
+    font-size: 21px;
+    margin: 0 0 16px;
+}
+
+.sorting-card p {
+    color: #435449;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 10px 0;
+}
+.categories-page {
+    background: #f4f8f1;
+    padding: 40px 5%;
+    min-height: 70vh;
+}
+
+.categories-heading {
+    text-align: center;
+    margin: 0 auto 35px;
+}
+
+.waste-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 23px;
+}
+
+.waste-title i { font-size: 28px; }
+.wet i { color: green; }
+.dry i { color: #2875c7; }
+.electronic i { color: #8050bd; }
+
+.categories-heading p {
+    color: #52645a;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.content .card {
+    display: block;
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #e0e9df;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+    min-width: 0;
+    transition: transform 0.3s ease;
+}
+
+.content .card:hover {
+    transform: translateY(-5px);
+}
+
+.content .card h2 {
+    color: #176b46;
+    margin-top: 5;
+    font-size: 22px;
+}
+
+.content .card p {
+    color: #405348;
+    line-height: 1.7;
+    font-size: 15px;
+}
+.offers h2 {
+    width: 100%;
+    text-align: center !important;
+    display: block;
+    margin:  30px auto;
+}
+
